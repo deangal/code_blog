@@ -44,7 +44,7 @@
         "Readme"
     ],
     "token": {
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDc1Mjc2MzR9.0qgk7Gdv002toPOMmi0ZEERzgCn0QPiuW9rDXsmC_9o"
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDgyMTk4NzN9.1-7ojabA_BNN6FqoPsZMzCB_-VAGTumuqHqvxTGCWpY"
     },
     "posts": [
         {
@@ -396,6 +396,34 @@
             "title": "Chess Assignment",
             "tag": "Open University",
             "body": "made the chess assignment of the open university in java.\npracticed syntax and had fun with algorithmic thinking."
+        },
+        {
+            "id": 28,
+            "date": "25/03/2022",
+            "title": "Implementing the new API in my company system ",
+            "tag": "My Bundles",
+            "body": "after building all of the endpoints I cleared all of the old API code and prepared the production for the new API prepared ( Webhooks, testing, sanity checks )"
+        },
+        {
+            "id": 29,
+            "date": "25/03/2022",
+            "title": "Fixed Major Production Bug",
+            "tag": "My Bunldes",
+            "body": "the printers code stopped working this week so I had to find a way to fix it. in the end I found a bug in the server so I reset the AWS server files and services to have this bug fixed.\n"
+        },
+        {
+            "id": 30,
+            "date": "25/03/2022",
+            "title": "Synced Dev and Prod files",
+            "tag": "My Bundles",
+            "body": "to have a better workflow I decided to sync the files Between Dev and Prod."
+        },
+        {
+            "id": 31,
+            "date": "25/03/2022",
+            "title": "UX Development To The Checkout Area",
+            "tag": "My Bundles",
+            "body": "after watching the data of our checkout the company decided to improve the UX of the checkout to improve sales."
         }
     ]
 }
