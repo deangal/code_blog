@@ -1,0 +1,401 @@
+{
+    "options": [
+        "HTML",
+        "API",
+        "HTTP",
+        "Bootstrap",
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "JSON",
+        "CSS",
+        "JWT",
+        "Router",
+        "Websocket",
+        "socket.io",
+        "Firebase",
+        "Stripe",
+        "Redux",
+        "JSONSERVER",
+        "SCSS",
+        "Animation",
+        "Deployment",
+        "Responsive Design",
+        "Redux Persist",
+        "Webhooks",
+        "CORS FIX",
+        "Wordpress",
+        "PHP",
+        "AWS",
+        "Concurrently",
+        "Google API",
+        "Laravel",
+        "Jobs",
+        "SQL",
+        "Vue",
+        "Ubuntu",
+        "Putty",
+        "VM",
+        "Homestead",
+        "Git",
+        "Python",
+        "EventEmitter",
+        "Readme"
+    ],
+    "token": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDc1Mjc2MzR9.0qgk7Gdv002toPOMmi0ZEERzgCn0QPiuW9rDXsmC_9o"
+    },
+    "posts": [
+        {
+            "id": 1,
+            "date": "21/02/2022",
+            "title": "HTML API Project",
+            "tag": "KERNELIOS",
+            "body": "In this project, I learned basic HTML and how an API works This project was more about understanding what goes behind the scenes of React and HTTP requests",
+            "skills": [
+                "HTML",
+                "API",
+                "HTTP",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": 2,
+            "date": "21/02/2022",
+            "title": "Cinema App",
+            "tag": "KERNELIOS",
+            "body": "This is my first big project, I used 2 different APIs one of them is reading data from a JSON file and implanting it in the API both are connected to the DB.",
+            "skills": [
+                "React",
+                "Node",
+                "Express",
+                "MongoDB",
+                "JSON",
+                "CSS",
+                "API",
+                "HTTP",
+                "JWT",
+                "Router"
+            ]
+        },
+        {
+            "id": 3,
+            "date": "21/02/2022",
+            "title": "Whatsapp Clone",
+            "tag": "KERNELIOS",
+            "body": "In This Project, I learned about WebSockets and socket.io and improved my React coding skills ( Importing technique, new Hooks, Folders arrangement )",
+            "skills": [
+                "Websocket",
+                "socket.io",
+                "React",
+                "Firebase"
+            ]
+        },
+        {
+            "id": 4,
+            "date": "21/02/2022",
+            "title": "E-commerce",
+            "tag": "Private Project",
+            "body": "This project was more about approaching the e-commerce market and learning how to implant payments via stripe\n",
+            "skills": [
+                "React",
+                "Node",
+                "Stripe",
+                "CSS",
+                "Router"
+            ]
+        },
+        {
+            "id": 5,
+            "date": "21/02/2022",
+            "title": "todos",
+            "tag": "Private Project",
+            "body": "In this project I practiced redux, state management, and the parent and child concept also I learned the technology of JSONSERVER which lets you build a fast project with persisted DB without creating one ",
+            "skills": [
+                "React",
+                "Node",
+                "Redux",
+                "JSONSERVER",
+                "Router"
+            ]
+        },
+        {
+            "id": 6,
+            "date": "21/02/2022",
+            "title": "Portfolio Website",
+            "tag": "Private Project",
+            "body": "I built my portfolio website using react and SCSS.\nI learned about DNS, how to deploy a project and responsive design concepts.\n3 important subjects to the start of my coding journey",
+            "skills": [
+                "REACT",
+                "SCSS",
+                "Animation",
+                "Deployment",
+                "Responsive Design",
+                "Router"
+            ]
+        },
+        {
+            "id": 7,
+            "date": "21/02/2022",
+            "title": "Shoply System Orders Dashboard",
+            "tag": "My Bundles",
+            "body": "My first developing project in my first company.\nIn this project ,I needed to fetch data from a Wordpress site and present it in realtime in a dashboard.\nThis project was a big challenge because the company used servel tools to build their site including python,\nPHP,node which made me learn webhooks and different HTTP methods than axios adding to this i ran by a CORS problem so i learned on my skin how to deal with it\nthe problem was that i sent requests to localhost from a AWS server than i deployed my project on AWS with EC2 and made systemd service to make it run on startup",
+            "skills": [
+                "React",
+                "Node",
+                "Express",
+                "Redux",
+                "Redux Persist",
+                "Webhooks",
+                "API",
+                "HTTP",
+                "CORS FIX",
+                "Wordpress",
+                "PHP",
+                "AWS",
+                "Router",
+                "Concurrently"
+            ]
+        },
+        {
+            "id": 8,
+            "date": "21/02/2022",
+            "title": "Shoply System Time Log Dashboard",
+            "tag": "My Bundles",
+            "body": "similar to the Orders Dashboard I needed to fetch the data from WordPress and present the time of every status update.\nmost of the technologies that I used remained the same except using google API to save the data logs in Google sheets",
+            "skills": [
+                "React",
+                "Node",
+                "Express",
+                "Redux",
+                "Redux Persist",
+                "Webhooks",
+                "API",
+                "HTTP",
+                "Google API",
+                "Wordpress",
+                "PHP",
+                "AWS",
+                "Router",
+                "Concurrently"
+            ]
+        },
+        {
+            "id": 9,
+            "date": "21/02/2022",
+            "title": "Shoply V2 API",
+            "tag": "My Bundles",
+            "body": "Shoply is making a shift from WordPress to Vue/Laravel so I started to make the API routes to the credit card, mail, messages etc...\n",
+            "skills": [
+                "Laravel",
+                "API",
+                "Jobs",
+                "Endpoints"
+            ]
+        },
+        {
+            "id": 10,
+            "date": "21/02/2022",
+            "title": "Shoply V2 SQL Tables export with API",
+            "tag": "My Bundles",
+            "body": "We had a demand for exporting all of the tables of the Wordpress Shoply while filtering some of the columns so I needed first to build an API that will filter and arrange all of the requested data and than export it to an exterior database.\n ",
+            "skills": [
+                "SQL",
+                "API",
+                "Wordpress",
+                "PHP"
+            ]
+        },
+        {
+            "id": 11,
+            "date": "21/02/2022",
+            "title": "Vue Crash Course",
+            "tag": "Course",
+            "body": "Took a course in Udemy which taught me the fundamentals of Vue: files structure, data binding, reactivity, routing and state management",
+            "skills": [
+                "Vue"
+            ]
+        },
+        {
+            "id": 12,
+            "date": "21/02/2022",
+            "title": "Coding Blog",
+            "tag": "Private Project",
+            "body": "Implanted all of the knowledge from the Vue crash course to build an application that serves my needs to document my coding journey.\n",
+            "skills": [
+                "Vue",
+                "JSONSERVER"
+            ]
+        },
+        {
+            "id": 13,
+            "date": "21/02/2022",
+            "title": "Virtual Machine",
+            "tag": "My Bundles",
+            "body": "as part of a mission that I assigned to I needed to learn what is a virtual machine how it works and how to control it",
+            "skills": [
+                "VM",
+                "Ubuntu",
+                "PuTTy"
+            ]
+        },
+        {
+            "id": 14,
+            "date": "21/02/2022",
+            "title": "Making a Local Development Workspace For Shoply",
+            "tag": "My Bundles",
+            "body": "Until now we worked on the remote of the Shoply system so we didn't have a good control on our versions so we had the need for a local workspace.\nI worked on making a VM image with homestead/Laravel and imported all of the SQL data of Shoply system then I uploaded it all to GitHub with git.",
+            "skills": [
+                "Laravel",
+                "Homestead",
+                "SQL",
+                "Wordpress",
+                "VM",
+                "Git"
+            ]
+        },
+        {
+            "id": 15,
+            "date": "21/02/2022",
+            "title": "Printers Code",
+            "tag": "My Bundles",
+            "body": "leanred the code of the Shoply system printers it takes data from the client to node.js and prints it with a python script.\ngave me a better understanding of the system and of algorithm and script because the code was loaded with logic.",
+            "skills": [
+                "Python",
+                "Node",
+                "EventEmitter",
+                "Websocket"
+            ]
+        },
+        {
+            "id": 16,
+            "date": "21/02/2022",
+            "title": "Shoply System Documentation ",
+            "tag": "My Bundles",
+            "body": "made a documentation for the shoply system",
+            "skills": [
+                "Readme"
+            ]
+        },
+        {
+            "id": 17,
+            "date": "03/03/2022",
+            "title": "Pytest ",
+            "tag": "Personal",
+            "body": "Learned how to run tests on a python script with the pytest libarary.\nmade few tries with basic functions checking varibales and functions returns and ended out testing a flask restapi which shows out the potenial of pytest as you can test http headers,data,response...",
+            "skills": [
+                "Python",
+                "Pytest",
+                "Testing"
+            ]
+        },
+        {
+            "id": 18,
+            "date": "03/03/2022",
+            "title": "API With Flask",
+            "tag": "Personal",
+            "body": "got introduced to flask , created basic rest api with get,getById,post,put,delete and played with it.\npracticed pytest on it to relize what data i can pull from it.\nto conclude flask is a very easy and fast api to set up perfect for dev projects.",
+            "skills": [
+                "Python",
+                "Flask",
+                "API"
+            ]
+        },
+        {
+            "id": 19,
+            "date": "03/03/2022",
+            "title": "Todos Project",
+            "tag": "Personal Project",
+            "body": "Started this project with the goal to practice typescript with redux toolkit.\nrefreshed my membory on the redux toolkit syntax,used thunk with toolkit and typescript, used persist with toolkit.\nin this project i made a bad parent/child realtions so i took notes to my next project to focus on building a more modular relation. ",
+            "skills": [
+                "React",
+                "Redux Toolkit",
+                "Redux Persist",
+                "Typescript",
+                "API",
+                "JSONSERVER",
+                "Thunk"
+            ]
+        },
+        {
+            "id": 20,
+            "date": "03/03/2022",
+            "title": "Weather Project",
+            "tag": "Personal Project",
+            "body": "Made another Weather Project, my first one was an interview home task for Herolo in javascript in basic redux.\nthis time i made in in typescript and redux toolkit.\nparcticed the parent/child relations and made a very modular project the usage of typescript contributed to it alot, ended up with a clean code a thing which i want to maintain",
+            "skills": [
+                "React",
+                "Redux Toolkit",
+                "Redux Persist",
+                "Typescript",
+                "API",
+                "Thunk",
+                "Modular Coding"
+            ]
+        },
+        {
+            "id": 21,
+            "date": "03/03/2022",
+            "title": "Git Branches",
+            "tag": "Personal",
+            "body": "Started on adding braches to my git repos to have a more organized GitHub profile.",
+            "skills": [
+                "Git"
+            ]
+        },
+        {
+            "id": 22,
+            "date": "10/03/2022",
+            "title": "Java basics",
+            "tag": "Open University",
+            "body": "Started a Computer Science course in the Open Univertsity of Israel on this week i learnt the basics of java.\n",
+            "skills": [
+                "Java"
+            ]
+        },
+        {
+            "id": 23,
+            "date": "10/03/2022",
+            "title": "Programmed Varios Features On My Work",
+            "tag": "My Bundles",
+            "body": "In the most of this week we had alot of improvements in the UI/UX and varios changes on the products features.\nit gave me time to practice my css and jquery skills in addition to that cleaning and reading alot of code lines as well.",
+            "skills": [
+                "Git",
+                "Jquery",
+                "Javascript",
+                "PHP",
+                "CSS",
+                "Responsive Design"
+            ]
+        },
+        {
+            "id": 24,
+            "date": "17/03/2022",
+            "title": "Cleaned Messy Code ",
+            "tag": "My Bundles",
+            "body": "as part of changes to some features in our code I had to clean a lot of messy code to improve readability and modularity"
+        },
+        {
+            "id": 25,
+            "date": "17/03/2022",
+            "title": "Making a shift to a new API",
+            "tag": "My Bundles",
+            "body": "our company made a decision to switch our current API to improve performance so I'm making all of the endpoints and syncing it with the depot printers."
+        },
+        {
+            "id": 26,
+            "date": "17/03/2022",
+            "title": "Daniel's Resort Landing Page",
+            "tag": "Client",
+            "body": "starting making a landing page for a client that approached me \nfor his business.\n"
+        },
+        {
+            "id": 27,
+            "date": "17/03/2022",
+            "title": "Chess Assignment",
+            "tag": "Open University",
+            "body": "made the chess assignment of the open university in java.\npracticed syntax and had fun with algorithmic thinking."
+        }
+    ]
+}
