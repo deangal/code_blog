@@ -30,7 +30,6 @@
     </div>
   </div>  
 </div> 
-  
    <h1 v-if="isAuth == false">Error 404 </h1>
 </div>
 

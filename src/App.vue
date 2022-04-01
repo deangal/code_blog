@@ -20,6 +20,17 @@
           <input class="form_title" v-model="title" placeholder="Title" type="text">
           <input class="form_tag" v-model="tag" placeholder="Tag" type="text">
           </div>
+
+          <label label for="options">options:</label>
+
+          <select @change="addToSelcetedOptions" class="form_options" name="options" >
+          <option v-for="option in options" :key="option">{{option}}</option>
+            </select>
+          
+            <div class="selcted_options_container">
+              <div v-for="option in selected_options" :key="option"  >{{option}}</div>
+            </div>
+
           <textarea class="form_body" v-model="body" cols="30" rows="10"></textarea>
         <input type="submit" value="Create" class="create"/>   
         </form>
@@ -33,7 +44,7 @@
 import Blog from './components/Blog.vue'
 import Login from './components/Login.vue'
 import axios from 'axios'
-const baseURL = `http://localhost:3000/posts` 
+const baseURL = `http://localhost:3000/` 
 export default {
   name: 'App',
   components: {
@@ -44,6 +55,8 @@ export default {
     return {
       title:'',
       tag:'',
+      options : [],
+      selected_options:[],
       body:'',
       isClicked:false,
        posts:'',
@@ -53,7 +66,10 @@ export default {
 
   async created(){
     try {
-      const res = await axios.get(baseURL)
+      const res = await axios.get(baseURL + 'posts')
+      const options_res = await axios.get(baseURL + 'options')
+      this.options = options_res.data
+      console.log(this.options)
       this.posts = res.data
     } catch(e){
       console.error(e)
@@ -61,6 +77,7 @@ export default {
   },
 
   methods:{
+
     Clickhandle(){
      return this.isClicked = !this.isClicked
     },
@@ -69,25 +86,37 @@ export default {
       if(this.title == '' || this.tag == '' || this.body == '' ){
         alert("Fill in all the fields!")
       } else {
-        let object = {id:this.posts.length+1,date:this.getDate(),title:this.title,tag:this.tag,body:this.body}
-        let res = await axios.post(baseURL, object)
+        let object = {id:this.posts.length+1,date:this.getDate(),title:this.title,tag:this.tag,body:this.body,skills:this.selected_options}
+        let res = await axios.post(baseURL + 'posts', object)
         this.posts = [...this.posts, res.data]
         this.isClicked = !this.isClicked    
-        this.title = ''  
+        this.selected_options = [] 
+        this.title = '' 
         this.tag = ''  
         this.body = ''  
-        console.log(this.posts);
       }
     },
+
     getDate(){
     let date = new Date().toLocaleDateString('en-GB')
       return date
-    } 
+    },
+
+    addToSelcetedOptions(e){
+      if(e.target.options.selectedIndex > -1) {
+          this.selected_options = [...this.selected_options, e.target.options[e.target.options.selectedIndex].innerHTML]
+      }
+      console.log(this.selected_options)
+    }
+
   }
 }
 </script>
 
 <style>
+html{
+  overflow-x:hidden;
+}
 body.lock{
   overflow: hidden;
 }
@@ -99,7 +128,12 @@ transform: rotate(45deg);
 padding: 4px;
 cursor: pointer;
 }
-
+.selcted_options_container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.5vw;
+}
 /* CSS */
 .create {
   background-color: #e1ecf4;
