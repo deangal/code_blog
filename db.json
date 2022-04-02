@@ -41,7 +41,8 @@
     "Git",
     "Python",
     "EventEmitter",
-    "Readme"
+    "Readme",
+    "Javascript"
   ],
   "token": {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDgyMTk4NzN9.1-7ojabA_BNN6FqoPsZMzCB_-VAGTumuqHqvxTGCWpY"
@@ -374,70 +375,131 @@
       "date": "17/03/2022",
       "title": "Cleaned Messy Code ",
       "tag": "My Bundles",
-      "body": "as part of changes to some features in our code I had to clean a lot of messy code to improve readability and modularity"
+      "body": "as part of changes to some features in our code I had to clean a lot of messy code to improve readability and modularity",
+      "skills": [
+        "PHP",
+        "Javascript",
+        "CSS"
+      ]
     },
     {
       "id": 25,
       "date": "17/03/2022",
       "title": "Making a shift to a new API",
       "tag": "My Bundles",
-      "body": "our company made a decision to switch our current API to improve performance so I'm making all of the endpoints and syncing it with the depot printers."
+      "body": "our company made a decision to switch one of our current APIs to improve performance so I'm making all of the endpoints and syncing it with the depot printers.",
+      "skills": [
+        "PHP",
+        "Javascript",
+        "API"
+      ]
     },
     {
       "id": 26,
       "date": "17/03/2022",
       "title": "Daniel's Resort Landing Page",
       "tag": "Client",
-      "body": "starting making a landing page for a client that approached me \nfor his business.\n"
+      "body": "starting making a landing page for a client that approached me \nfor his business.\n",
+      "skills": [
+        "Javascript",
+        "SCSS",
+        "React"
+      ]
     },
     {
       "id": 27,
       "date": "17/03/2022",
       "title": "Chess Assignment",
       "tag": "Open University",
-      "body": "made the chess assignment of the open university in java.\npracticed syntax and had fun with algorithmic thinking."
+      "body": "made the chess assignment of the open university in java.\npracticed syntax and had fun with algorithmic thinking.",
+      "skills": [
+        "Java"
+      ]
     },
     {
       "id": 28,
       "date": "25/03/2022",
       "title": "Implementing the new API in my company system ",
       "tag": "My Bundles",
-      "body": "after building all of the endpoints I cleared all of the old API code and prepared the production for the new API prepared ( Webhooks, testing, sanity checks )"
+      "body": "after building all of the endpoints I cleared all of the old API code and prepared the production for the new API prepared ( testing, sanity checks )",
+      "skills": [
+        "PHP",
+        "Javascript",
+        "API"
+      ]
     },
     {
       "id": 29,
       "date": "25/03/2022",
       "title": "Fixed Major Production Bug",
       "tag": "My Bunldes",
-      "body": "the printers code stopped working this week so I had to find a way to fix it. in the end I found a bug in the server so I reset the AWS server files and services to have this bug fixed.\n"
+      "body": "the printers code stopped working this week so I had to find a way to fix it. in the end I found a bug in the server so I reset the AWS server files and services to have this bug fixed.\n",
+      "skills": [
+        "PHP",
+        "Python",
+        "AWS",
+        "Node"
+      ]
     },
     {
       "id": 30,
       "date": "25/03/2022",
       "title": "Synced Dev and Prod files",
       "tag": "My Bundles",
-      "body": "to have a better workflow I decided to sync the files Between Dev and Prod."
+      "body": "to have a better workflow I decided to sync the files Between Dev and Prod.",
+      "skills": [
+        "Git",
+        "FTP",
+        "AWS"
+      ]
     },
     {
       "id": 31,
       "date": "25/03/2022",
       "title": "UX Development To The Checkout Area",
       "tag": "My Bundles",
-      "body": "after watching the data of our checkout the company decided to improve the UX of the checkout to improve sales."
+      "body": "after watching the data of our checkout the company decided to improve the UX of the checkout to improve sales.",
+      "skills": [
+        "PHP",
+        "CSS",
+        "Javascript"
+      ]
     },
     {
       "id": 32,
       "date": "01/04/2022",
-      "title": "Webhooks to delivery api",
+      "title": "Webhooks To The New API",
       "tag": "My Bundles",
-      "body": "Made webhooks to the API I implanted so evreytime the a order is getting changed in the api dashboard it updates the order status in our system.\n"
+      "body": "Made webhooks to the API I implanted so evreytime the a order is getting changed in the api dashboard it updates the order status in our system.\n",
+      "skills": [
+        "PHP",
+        "API",
+        "Webhooks"
+      ]
     },
     {
       "id": 33,
       "date": "01/04/2022",
       "title": "Checkout Area UX/UI ",
       "tag": "My Bundles",
-      "body": "I am keeping suggesting improvements to the checkout area to improve the company funnels and implementing the relevant suggestions that are brought up by our workers."
+      "body": "I am keeping suggesting improvements to the checkout area to improve the company funnels and implementing the relevant suggestions that are brought up by our workers.",
+      "skills": [
+        "PHP",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "id": 34,
+      "date": "02/04/2022",
+      "title": "Updated Code Blog Project",
+      "tag": "Personal Project",
+      "body": "Updated code blog modal so I can add technologies that I used in each post.\nAlso I had duplicate code from prop drilling ( styles and http requests ) so I cleaned it out of the code.\n",
+      "skills": [
+        "Vue",
+        "CSS",
+        "Git"
+      ]
     }
   ]
 }

@@ -2,37 +2,52 @@
   
   <div id="app"  >
     
-  <router-view :Clickhandle="Clickhandle" :posts="posts">
+  <router-view :Clickhandle="Clickhandle" :posts="posts" :options="options">
 
     <Login />
-    <Blog :Clickhandle="Clickhandle" />
+    <Blog :Clickhandle="Clickhandle" :posts="posts" :options="options" />
 
   </router-view>
-        <!-- modal  :class="{isClicked} ? 'bg_modal active' : 'bg_modal'" -->
 
   <div v-bind:class="[isClicked ? 'bg_modal active' : 'bg_modal']">
       <div class="modal_content">
 
         
-        <div  @click="Clickhandle" class="close">+</div>
+        <div class="close_container">
+          <div @click="Clickhandle" class="close">+</div>
+        </div>
+
         <form class="modal_form"  @submit="newPost">
+
+
           <div class="form_header">
           <input class="form_title" v-model="title" placeholder="Title" type="text">
           <input class="form_tag" v-model="tag" placeholder="Tag" type="text">
           </div>
 
-          <label label for="options">options:</label>
 
-          <select @change="addToSelcetedOptions" class="form_options" name="options" >
-          <option v-for="option in options" :key="option">{{option}}</option>
-            </select>
-          
-            <div class="selcted_options_container">
-              <div v-for="option in selected_options" :key="option"  >{{option}}</div>
-            </div>
+          <div class="options_container">
+            <div class="select_container">
+              <select @change="addToSelcetedOptions" class="form_options" name="options" >
+                <option disabled selected>Select Technologies</option>
+                <option v-for="option in options" :key="option + 0">{{option}}</option>
+              </select>
+
+              <input @click="clearOptions" type="button" value="Clear"/>   
+
+
+              </div>
+              
+              <div class="selcted_options_container">
+                <div v-for="option in selected_options" :key="option + 1"  >{{option}}</div>
+              </div>
+          </div>
 
           <textarea class="form_body" v-model="body" cols="30" rows="10"></textarea>
+
+        <div>
         <input type="submit" value="Create" class="create"/>   
+        </div>
         </form>
            </div>
   </div>
@@ -59,7 +74,7 @@ export default {
       selected_options:[],
       body:'',
       isClicked:false,
-       posts:'',
+      posts:'',
 
     }
   },
@@ -68,8 +83,8 @@ export default {
     try {
       const res = await axios.get(baseURL + 'posts')
       const options_res = await axios.get(baseURL + 'options')
+
       this.options = options_res.data
-      console.log(this.options)
       this.posts = res.data
     } catch(e){
       console.error(e)
@@ -83,7 +98,7 @@ export default {
     },
 
     async newPost(){
-      if(this.title == '' || this.tag == '' || this.body == '' ){
+      if(this.title == '' || this.tag == '' || this.body == '' || this.selected_options.length == 0){
         alert("Fill in all the fields!")
       } else {
         let object = {id:this.posts.length+1,date:this.getDate(),title:this.title,tag:this.tag,body:this.body,skills:this.selected_options}
@@ -106,7 +121,10 @@ export default {
       if(e.target.options.selectedIndex > -1) {
           this.selected_options = [...this.selected_options, e.target.options[e.target.options.selectedIndex].innerHTML]
       }
-      console.log(this.selected_options)
+    },
+
+    clearOptions(){
+      this.selected_options = [];  
     }
 
   }
@@ -120,21 +138,66 @@ html{
 body.lock{
   overflow: hidden;
 }
-.close{
-position: relative;
-left: 14vw;
-font-size: 32px;
-transform: rotate(45deg);
-padding: 4px;
-cursor: pointer;
+
+select{
+  width: 15vw;
+  height: 4vh;
+  font-size: 19px;
 }
+
+.close{
+  position: relative;
+  font-size: 32px;
+  transform: rotate(45deg);
+  padding: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.options_container{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+.post_skills, .selcted_options_container{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+
+}
+
+.post_skills div , .selcted_options_container div {  
+  border: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
+}
+
 .selcted_options_container{
   display:flex;
   align-items:center;
   justify-content:center;
   gap:0.5vw;
 }
-/* CSS */
+
+.close_container{
+  height:3vh;
+}
+
+.select_container{
+  display:flex;
+}
+.select_container input{
+  height:4vh
+}
+
+/* modal css */
 .create {
   background-color: #e1ecf4;
   border-radius: 3px;
@@ -184,14 +247,14 @@ input:focus::-webkit-input-placeholder{
 
 
 .form_title{
-  width: 21vw;
+  width: 65%;
   height: 3vh;
   font-size: 19px;
 
 }
 
 .form_tag{
-  width: 5vw;
+  width: 25%;
   height: 3vh;
   margin-left: 0.5vw;
   font-size: 19px;
@@ -199,8 +262,8 @@ input:focus::-webkit-input-placeholder{
 }
 
 .form_body{
-  width: 27vw;
-  height: 25vh;
+  width: 90%;
+  height: 50vh;
   margin-left: 5px;
   margin-top: 2vh;
   resize: none;
@@ -212,13 +275,17 @@ input:focus::-webkit-input-placeholder{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2.5vh;
+
 }
 
 .modal_content{
-  width: 30vw;
-  height: 45vh;
-  background-color: white;
-  border-radius: 4px;
+    width: 50vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 4px;
+    top: 40px;
+    position: relative;
   
 }
 

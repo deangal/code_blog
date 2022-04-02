@@ -36,7 +36,6 @@ export default {
       // 	this.filteredArray.push(filteredString[0])
 
       // }
-      console.log(this.filteredString);
       this.$emit("clicked", this.filteredString);
     },
   },
