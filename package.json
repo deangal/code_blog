@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev": "concurrently \"vue-cli-service serve\" \"json-server --watch db.json\"",
+    "dev": "concurrently \"set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve\" \"json-server --watch db.json\"",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },

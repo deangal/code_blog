@@ -42,10 +42,12 @@
     "Python",
     "EventEmitter",
     "Readme",
-    "Javascript"
+    "Javascript",
+    "Java",
+    "Typescript"
   ],
   "token": {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDgyMTk4NzN9.1-7ojabA_BNN6FqoPsZMzCB_-VAGTumuqHqvxTGCWpY"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDkzNDM2NTJ9.Wo34oXkx259ru7QXZHiGgjM_97WjR237pW1j15g6eeU"
   },
   "posts": [
     {
@@ -499,6 +501,64 @@
         "Vue",
         "CSS",
         "Git"
+      ]
+    },
+    {
+      "id": 35,
+      "date": "07/04/2022",
+      "title": "Moved the new API to production and kept testing it",
+      "tag": "My Bundles",
+      "body": "Moved the new API to production and kept testing the get,post,put,delete and webhooks.\nalso our company brought up some things that needs to be configured so we arranged a meeting with the API developers and got on the same page",
+      "skills": [
+        "API",
+        "PHP",
+        "Wordpress"
+      ]
+    },
+    {
+      "id": 36,
+      "date": "07/04/2022",
+      "title": "Classes and Methods Assignment",
+      "tag": "Open University",
+      "body": "Some genral classes usage in Java, gave me practice in OOP.\n",
+      "skills": [
+        "Java"
+      ]
+    },
+    {
+      "id": 37,
+      "date": "07/04/2022",
+      "title": "Started Working as a Freelancer",
+      "tag": "Freelance",
+      "body": "Started Working as a freelancer for my former CTO,for a start im working on basic Wordpress Projects ",
+      "skills": [
+        "HTTP",
+        "Javascript",
+        "PHP",
+        "CSS",
+        "Wordpress"
+      ]
+    },
+    {
+      "id": 38,
+      "date": "07/04/2022",
+      "title": "Documented Shoply System",
+      "tag": "My Bundles",
+      "body": "Documented the entire shoply system as part of finishing my position in the company.\n",
+      "skills": [
+        "Git"
+      ]
+    },
+    {
+      "id": 39,
+      "date": "07/04/2022",
+      "title": "Converted MyBundles Project From Javascript to Typescript",
+      "tag": "My Bundles",
+      "body": "This project had servel bugs so I decided to convert it to typescript which solved all of the bugs.\nthis showed me the potenial of Typescript in debugging",
+      "skills": [
+        "Typescript",
+        "Redux",
+        "React"
       ]
     }
   ]
