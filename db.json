@@ -560,6 +560,41 @@
         "Redux",
         "React"
       ]
+    },
+    {
+      "id": 40,
+      "date": "14/04/2022",
+      "title": "Tested The New API",
+      "tag": "My Bundles",
+      "body": "Tested the new API I implamented,as of today it being tested in the field by our drivers.",
+      "skills": [
+        "API",
+        "PHP"
+      ]
+    },
+    {
+      "id": 41,
+      "date": "14/04/2022",
+      "title": "Developed Varios Assignments",
+      "tag": "My Bunldes",
+      "body": "Developed varios assignmets for my last week in My Bundles including checkout ux,printers integration,filtering products and autocomplete functions.",
+      "skills": [
+        "PHP",
+        "Javascript"
+      ]
+    },
+    {
+      "id": 42,
+      "date": "14/04/2022",
+      "title": "Created Workspaces and Started Developing As A Freelance",
+      "tag": "Freelance",
+      "body": "Created most of the FTP connection of my client and started developing little things in Wordpress sites.\nI'm finding it very challenging because most of my client's clients sites are a big code spaghetti which means I need to find a sophisticated solution for an easy problem",
+      "skills": [
+        "PHP",
+        "Wordpress",
+        "CSS",
+        "Javascript"
+      ]
     }
   ]
 }
