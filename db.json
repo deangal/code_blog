@@ -47,7 +47,7 @@
     "Typescript"
   ],
   "token": {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NDkzNDM2NTJ9.Wo34oXkx259ru7QXZHiGgjM_97WjR237pW1j15g6eeU"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2NTA3MjE1MjB9.eX88XIpGYjuYjMc3FQ-IOCuPDfcoO6DIbm9uiZQvppY"
   },
   "posts": [
     {
@@ -594,6 +594,31 @@
         "Wordpress",
         "CSS",
         "Javascript"
+      ]
+    },
+    {
+      "id": 43,
+      "date": "23/04/2022",
+      "title": "Developed Assignments for Gingim",
+      "tag": "Freelance",
+      "body": "Developed a page that pulls data from SQL DB and from Wordpress posts and a small algorithm that show the data according to the client's requests. ",
+      "skills": [
+        "HTML",
+        "Wordpress",
+        "PHP",
+        "CSS",
+        "Javascript",
+        "SQL"
+      ]
+    },
+    {
+      "id": 44,
+      "date": "23/04/2022",
+      "title": "Arrays and Classes Assignment",
+      "tag": "Open University",
+      "body": "Developed an Airport Schedule using arrays in java.",
+      "skills": [
+        "Java"
       ]
     }
   ]
