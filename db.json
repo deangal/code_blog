@@ -620,6 +620,20 @@
       "skills": [
         "Java"
       ]
+    },
+    {
+      "id": 45,
+      "date": "30/04/2022",
+      "title": "Developed Reactive SPA for Gingim Site",
+      "tag": "Freelance",
+      "body": "With Ajax calls I made a reactive SPA that update Wordpress Data and the frontend according to the client action. ",
+      "skills": [
+        "HTTP",
+        "CSS",
+        "Javascript",
+        "Wordpress",
+        "PHP"
+      ]
     }
   ]
 }
