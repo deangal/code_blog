@@ -634,6 +634,64 @@
         "Wordpress",
         "PHP"
       ]
+    },
+    {
+      "id": 46,
+      "date": "21/05/2022",
+      "title": "Polymorphism Assignment",
+      "tag": "Open University",
+      "body": "Completed the assignment in polymorphism in java\n",
+      "skills": [
+        "Java"
+      ]
+    },
+    {
+      "id": 47,
+      "date": "21/05/2022",
+      "title": "Started New Position in Spinomenal",
+      "tag": "Spinomenal",
+      "body": "Started New Position as a Fullstack Developer in Spinomenal, iGaming Company Who Develops Games For Casinos.",
+      "skills": [
+        "Typescript",
+        "Vue"
+      ]
+    },
+    {
+      "id": 48,
+      "date": "21/05/2022",
+      "title": "Developed Feature In My Company System",
+      "tag": "Spinomenal",
+      "body": "Developed my first feature which improves productivity in our company",
+      "skills": [
+        "Vue",
+        "Typescript",
+        "Javascript",
+        "API",
+        "HTTP"
+      ]
+    },
+    {
+      "id": 49,
+      "date": "21/05/2022",
+      "title": "Working On An Existing Old Project ",
+      "tag": "Spinomenal",
+      "body": "Working on a project which involves filtering duplicate code and making it more readable and improving the frontend side of it.",
+      "skills": [
+        "Vue",
+        "Typescript",
+        "API",
+        "HTTP"
+      ]
+    },
+    {
+      "id": 50,
+      "date": "21/05/2022",
+      "title": "Recursive Assignment",
+      "tag": "Open University",
+      "body": "Completed the assignment in recursive programming in java\n",
+      "skills": [
+        "Java"
+      ]
     }
   ]
 }
