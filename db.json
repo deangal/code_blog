@@ -692,6 +692,19 @@
       "skills": [
         "Java"
       ]
+    },
+    {
+      "id": 51,
+      "date": "27/05/2022",
+      "title": "Front end animations and responsive design",
+      "tag": "Spinomenal",
+      "body": "Worked on an assignment which included creating animation and a responsive design of a feature",
+      "skills": [
+        "Vue",
+        "Animation",
+        "SCSS",
+        "Responsive Design"
+      ]
     }
   ]
 }
