@@ -705,6 +705,40 @@
         "SCSS",
         "Responsive Design"
       ]
+    },
+    {
+      "id": 52,
+      "date": "18/06/2022",
+      "title": "Modular Proggramming a feature for the company",
+      "tag": "Spinomenal",
+      "body": "practicing modular thinking and developed POC of a feature that would help the company.",
+      "skills": [
+        "Vue",
+        "Javascript"
+      ]
+    },
+    {
+      "id": 53,
+      "date": "18/06/2022",
+      "title": "Developed Gingim system and organized code",
+      "tag": "Freelance",
+      "body": "Continued to develop Gingim System ( mostly DOM Manipulation and Ajax Calls)\nand organized the messy code.",
+      "skills": [
+        "PHP",
+        "Wordpress",
+        "Javascript",
+        "CSS"
+      ]
+    },
+    {
+      "id": 54,
+      "date": "19/06/2022",
+      "title": "Binary Tree Assignment",
+      "tag": "Open University",
+      "body": "Learned about binary trees and practiced it in the assignment",
+      "skills": [
+        "Java"
+      ]
     }
   ]
 }
